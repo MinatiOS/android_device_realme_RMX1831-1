@@ -61,7 +61,7 @@ extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
 # Hack MTK RIL libs for USSD and incoming calls
 # see https://github.com/phhusson/treble_experimentations/issues/57#issuecomment-416998086
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+BLOB_ROOT="$HAVOC_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 for blob in $BLOB_ROOT/lib64/libmtk-ril.so;do
     sed -i \
